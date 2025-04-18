@@ -16,25 +16,9 @@ icon_path = os.path.join(BASE_DIR, "assets", "icons", "icon.ico")
 step_images_path = os.path.join(BASE_DIR, "assets", "step_images")
 readme_path = os.path.join(BASE_DIR, "README.txt")
 
-print("Assets en:", assets_path)
-print("Backgrounds en:", backgrounds_path)
-print("Fonts en:", fonts_path)
-print("Icons en:", icons_path)
-print("Icon en:", icon_path)
-print("Step Images en:", step_images_path)
-
 for path in [assets_path, backgrounds_path, fonts_path, icons_path, step_images_path]:
     if not os.path.exists(path):
-        print(f"⚠️ Advertencia: La carpeta {path} no existe.")
-
-def delete_venv():
- venv_path = ".venv"
-
- if os.path.exists(venv_path):
-    shutil.rmtree(venv_path)
-    print("Entorno virtual eliminado correctamente")
- else:
-    print("No se encontró el entorno virtual")
+        print(f"Advertencia: La carpeta {path} no existe.")
 
 def show_page(frame):
     frame.tkraise()
@@ -48,9 +32,9 @@ if os.path.exists(icon_path):
     try:
         root.iconbitmap(icon_path)  
     except Exception as e:
-        print(f"⚠️ Advertencia: No se pudo cargar el icono. Error: {e}")
+        print(f"Advertencia: No se pudo cargar el icono. Error: {e}")
 else:
-    print(f"⚠️ Advertencia: No se encontró el icono en {icon_path}")
+    print(f"Advertencia: No se encontró el icono en {icon_path}")
 
 page1 = tk.Frame(root)
 page2 = tk.Frame(root)
@@ -148,9 +132,9 @@ def open_window():
      try:
         secondary_window.iconbitmap(icon_path)  
      except Exception as e:
-        print(f"⚠️ Advertencia: No se pudo cargar el icono. Error: {e}")
+        print(f"Advertencia: No se pudo cargar el icono. Error: {e}")
      else:
-      print(f"⚠️ Advertencia: No se encontró el icono en {icon_path}")    
+      print(f"Advertencia: No se encontró el icono en {icon_path}")    
 
 menu_bar = tk.Menu(root)
 menu_bar = tk.Menu(root, tearoff=0, bg="white", fg="black", relief="flat")
