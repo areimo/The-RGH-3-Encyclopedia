@@ -1,4 +1,4 @@
-![banner](https://github.com/user-attachments/assets/d9f7a4a2-fee7-4195-96f3-996b47211298)
+![banner](https://github.com/user-attachments/assets/e885d37b-485e-4f62-8848-93b015d9115a)
 
 The RGH 3 Encyclopedia
 
